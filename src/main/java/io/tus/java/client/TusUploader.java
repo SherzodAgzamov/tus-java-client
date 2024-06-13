@@ -351,11 +351,11 @@ public class TusUploader {
                         connection);
             }
             if (offset != serverOffset) {
-                throw new ProtocolException(
-                        String.format("response contains different Upload-Offset value (%d) than expected (%d)",
-                                serverOffset,
-                                offset),
-                        connection);
+//                throw new ProtocolException(
+//                        String.format("response contains different Upload-Offset value (%d) than expected (%d)",
+//                                serverOffset,
+//                                offset),
+//                        connection);
             }
 
             connection = null;
